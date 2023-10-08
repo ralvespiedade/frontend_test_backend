@@ -1,19 +1,55 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 body header ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 body header ul li {
-  margin: 10px;
+  margin: 15px;
 }
 body header ul li a {
   text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+body div#logo {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://th.bing.com/th/id/OIP.KnfojIIXQxMBV8BN75TfgQAAAA?pid=ImgDet&rs=1");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body section h1 {
+  color: brown;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+body section h2 {
+  color: rgb(209, 151, 16);
+}
+body section p {
+  font-style: italic;
+  margin: 0px 0;
+}
+body section form #li_login {
+  background-color: rgb(176, 226, 226);
+  width: 280px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+}
+body section form button {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
 }
 body section ul {
   margin: 0;
@@ -25,10 +61,11 @@ body section ul li {
   width: 500px;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(204, 150, 12);
+  background-color: rgb(242, 208, 122);
   border-radius: 3px;
 }
 body section ul li span {
   display: block;
-  color: rgb(86, 106, 10);
+  font-size: 18px;
+  color: rgb(69, 84, 8);
 }/*# sourceMappingURL=style.css.map */
