@@ -32,6 +32,29 @@ body section h1 {
   font-size: 25px;
   letter-spacing: 2px;
 }
+body section div#headerProducts {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(242, 208, 122);
+  border-radius: 3px;
+  font-size: 21px;
+}
+body section div#headerProducts #code {
+  position: relative;
+  left: 0;
+  width: 20%;
+  text-align: center;
+}
+body section div#headerProducts #product {
+  width: 60%;
+  text-align: center;
+}
+body section div#headerProducts #price {
+  width: 20%;
+  text-align: center;
+}
 body section h2 {
   color: rgb(209, 151, 16);
 }
@@ -51,21 +74,39 @@ body section form button {
   width: 100%;
   height: 35px;
 }
-body section ul {
+body section ul#productList {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-body section ul li {
+body section ul#productList li {
   margin: 5px 0;
   width: 500px;
   display: flex;
-  justify-content: space-around;
   background-color: rgb(242, 208, 122);
   border-radius: 3px;
 }
-body section ul li span {
+body section ul#productList li:nth-child(1) {
+  color: black;
+}
+body section ul#productList li .code_span {
+  width: 20%;
   display: block;
   font-size: 18px;
   color: rgb(69, 84, 8);
+  text-align: center;
+}
+body section ul#productList li .name_span {
+  width: 60%;
+  display: block;
+  font-size: 18px;
+  color: rgb(69, 84, 8);
+  text-align: center;
+}
+body section ul#productList li .price_span {
+  width: 20%;
+  display: block;
+  font-size: 18px;
+  color: rgb(69, 84, 8);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
