@@ -7,7 +7,19 @@ body header ul {
   justify-content: center;
 }
 body header ul li {
+  padding: 10px;
+  width: 250px;
+  text-align: center;
   margin: 15px;
+}
+body header ul li.selected {
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+body header ul li.selected a {
+  color: white;
 }
 body header ul li a {
   text-decoration: none;
