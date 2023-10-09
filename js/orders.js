@@ -1,12 +1,12 @@
 
 var menu = []
-import("./main.js").then((module) => {
+import("./constructor.js").then((module) => {
  module.menu.forEach(item=>{
   menu.push(item)
  })
 })
 
-console.log(menu)
+
 
 const header = document.querySelector('#list')
 /* const menu = [

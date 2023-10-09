@@ -26,7 +26,7 @@ const menu = [
   }
 ]
 
-//--HTML CONSTRUCTOR
+//--Header constructor
 menu.forEach(op => {
 
   if (window.location.href == op.address) {
@@ -46,10 +46,6 @@ menu.forEach(op => {
   
 })
 
-//
 
-if (window.location.href == 'http://127.0.0.1:5500/views/adm.html') {
-  console.log('tell me why')
-}
 
 
