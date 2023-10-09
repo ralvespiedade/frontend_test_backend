@@ -53,7 +53,9 @@ async function getProducts() {
       data.forEach(item => {
         productList.innerHTML += `
           <li>
-            <span class="name_price_span">${item.name}</span> <span>R$ ${item.price},00</span>
+            <span class="code_span">${item.code}</span>
+            <span class="name_span">${item.name}</span>
+            <span class='price_span'>${item.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
           </li>
         `
       })
