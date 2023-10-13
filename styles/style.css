@@ -74,7 +74,10 @@ body section p {
   font-style: italic;
   margin: 0px 0;
 }
-body section form #li_login {
+body section form ul {
+  padding: 0;
+}
+body section form ul #li_login {
   background-color: rgb(176, 226, 226);
   width: 280px;
   height: 45px;
@@ -84,6 +87,10 @@ body section form #li_login {
 body section form button {
   margin-top: 10px;
   width: 100%;
+  height: 35px;
+}
+body section button#signUp {
+  width: 280px;
   height: 35px;
 }
 body section ul#productList {

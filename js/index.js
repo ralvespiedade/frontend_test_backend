@@ -1,14 +1,15 @@
 const username = document.querySelector('#user')
 const password = document.querySelector('#password')
 const formLogin = document.forms[0]
+const btsignUp = document.querySelector('#signUp')
 
 //Header constructor
-var menu = []
-import("./constructor.js").then((module) => {
- module.menu.forEach(item=>{
-  menu.push(item)
- })
-})
+// var menu = []
+// import("./constructor.js").then((module) => {
+//  module.menu.forEach(item=>{
+//   menu.push(item)
+//  })
+// })
 
 formLogin.onsubmit = function(event) {
   event.preventDefault()
@@ -20,4 +21,8 @@ formLogin.onsubmit = function(event) {
     window.location.href = ('./adm.html')
   }
  
+}
+
+btsignUp.onclick = function() {
+  window.location.href = 'client_register.html'
 }
