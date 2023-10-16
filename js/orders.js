@@ -1,37 +1,17 @@
 
+const header = document.querySelector('#list')
+
 var menu = []
+
 import("./constructor.js").then((module) => {
  module.menu.forEach(item=>{
-  menu.push(item)
+    menu.push(item)
  })
 })
 
 
 
-const header = document.querySelector('#list')
-/* const menu = [
 
-  {
-    name: 'Clientes',
-    link: './clientes.html',
-    address: 'http://127.0.0.1:5500/views/clientes.html'
-  },
-  {
-    name: 'Produtos',
-    link: './produtos.html',
-    address: 'http://127.0.0.1:5500/views/produtos.html'
-  },
-  {
-    name: 'Pedidos',
-    link: './pedidos.html',
-    address: 'http://127.0.0.1:5500/views/pedidos.html'
-  },
-  {
-    name: 'Gerenciamento',
-    link: './adm.html',
-    address: 'http://127.0.0.1:5500/views/adm.html'
-  }
-] */
 
 //--HTML CONSTRUCTOR
 menu.forEach(op => {

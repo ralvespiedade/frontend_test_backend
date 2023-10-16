@@ -21,7 +21,7 @@ formLogin.onsubmit = async function(event) {
             
           } else {
             alert(`Seja bem vindo, ${userName.value}`)
-            window.location.href = 'clientes.html'
+            window.location.href = 'clients.html'
           }
         } 
 

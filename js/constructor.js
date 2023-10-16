@@ -2,6 +2,7 @@ const defaultPath = 'http://127.0.0.1:8080/api/products'
 
 const productList = document.querySelector('#productList')
 const header = document.querySelector('#list')
+
 const menu = [
 
   {
@@ -11,8 +12,8 @@ const menu = [
   },
   {
     name: 'Produtos',
-    link: './produtos.html',
-    address: 'http://127.0.0.1:5500/views/produtos.html'
+    link: './products.html',
+    address: 'http://127.0.0.1:5500/views/products.html'
   },
   {
     name: 'Pedidos',
