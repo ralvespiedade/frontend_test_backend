@@ -5,6 +5,7 @@ body header ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 body header ul li {
   padding: 10px;
@@ -73,6 +74,21 @@ body section h2 {
 body section p {
   font-style: italic;
   margin: 0px 0;
+}
+body section ul#ordersHistory {
+  list-style: none;
+  padding: 0;
+}
+body section ul#ordersHistory li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  background-color: green;
+  color: white;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
 }
 body section form ul {
   padding: 0;

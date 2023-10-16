@@ -1,43 +1,27 @@
+const ordersHistory = document.querySelector('#ordersHistory')
+const defaultPathOrders = 'http://127.0.0.1:8080/api/orders'
 
-const btRegister = document.querySelector('#btRegister')
-const signupForm = document.querySelector('#signupForm')
-const defaultPath = 'http://127.0.0.1:8080/api/clients'
+//puxar o id do cliente de um elemento escondido, que precisarei colocar.
 
-signupForm.onsubmit = async function(event) {
-  event.preventDefault()
-  
-  const name = document.querySelector('#name').value
-  const email = document.querySelector('#email').value
-  const fone = document.querySelector('#fone').value
-  const address = document.querySelector('#address').value
-  const password = document.querySelector('#password').value
-  
-  await fetch(defaultPath, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      name,
-      fone,
-      email,
-      address,
-      password
-    })
+async function getOrders() {
+  await fetch(defaultPathOrders).then(response => {
     
-  }).then(response => {
     response.json().then(data => {
-      if (data.message === 'success') {
-        alert('Cadastro realizado com sucesso!')
-        signupForm.reset()
-        window.location.href = 'index.html'
-      } else {
-        alert('Ops! Ocorreu um erro!')
-      }
-    })
-  
-  })
+      console.log(data.orders)
+      data.orders.forEach(order => {
         
-  
+        ordersHistory.innerHTML += `
+          <li>
+            <div>${order.order_date} - ${order.order_status}</div>
+          </li>
+        `
+      })
+      
+    })
+      
+  })
+
 }
+
+getOrders()
 
